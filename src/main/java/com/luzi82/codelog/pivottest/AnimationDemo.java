@@ -21,6 +21,7 @@ public class AnimationDemo implements Application {
 
 		@Override
 		public void paint(Graphics2D graphics) {
+			System.err.println("YJNDJMRR paint");
 			super.paint(graphics);
 			int width = getWidth();
 			int height = getHeight();
@@ -44,10 +45,13 @@ public class AnimationDemo implements Application {
 
 		window.open(display);
 
+		
 		ApplicationContext.scheduleRecurringCallback(new Runnable() {
 			@Override
 			public void run() {
-				c.repaint();
+				System.err.println("GTVUDJER run start");
+				c.repaint(false);
+				System.err.println("AZSQAEWR run end");
 			}
 		}, 10);
 
