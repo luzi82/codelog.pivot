@@ -14,7 +14,7 @@ import org.apache.pivot.wtk.Window;
 
 // https://pivot.apache.org/tutorials/hello-world.html
 
-public class HelloWorld implements Application {
+public class HelloWorldDemo implements Application {
 
 	private Window window = null;
 
@@ -54,7 +54,7 @@ public class HelloWorld implements Application {
 	}
 
 	public static void main(String[] args) {
-		DesktopApplicationContext.main(HelloWorld.class, args);
+		DesktopApplicationContext.main(HelloWorldDemo.class, args);
 	}
 
 }
